@@ -1,8 +1,6 @@
-const { connect } = require("mongoose")
-
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
-const myPeer = new PerformanceEntry(undefined, {
+const myPeer = new Peer(undefined, {
     host: '/',
     port: '3001'
 })
